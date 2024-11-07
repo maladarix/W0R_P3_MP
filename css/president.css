@@ -1,0 +1,19 @@
+.img-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+.blueBorder {
+  border: solid 2px blue;
+}
+
+.redBorder {
+  border: solid 2px red;
+}
