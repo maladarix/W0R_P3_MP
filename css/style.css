@@ -2,45 +2,6 @@ body {
   margin: 0px;
 }
 
-header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  height: 50px;
-  width: 100%;
-  border-bottom: solid 1px gray;
-  background-color: white;
-  z-index: 100;
-  box-shadow: -14px -6px 20px;
-}
-
-.btn-flex {
-  width: auto;
-  border: solid 1px black;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 200ms ease-in-out;
-}
-
-.btn-label {
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-}
-
-.btn-label > h2 {
-  margin: 0px;
-  padding-left: 5px;
-}
-
-.btn-flex:hover, .selected {
-  background-color: rgb(36, 36, 36);
-  color: white;
-}
-
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -53,7 +14,7 @@ main {
   flex-direction: column;
   align-items: center;
   grid-column: 3 / 11;
-  height: 1000px;
+  height: fit-content;
 }
 
 .head-title {
@@ -95,7 +56,7 @@ main {
 }
 
 
-.text-top-board > h2, p, h1{
+.text-top-board > h2, .text-top-board > p, .text-top-board > h1{
   margin: 0px;
   padding-left: 7px;
   padding-right: 7px;
@@ -140,8 +101,87 @@ main {
   width: 100%;
 }
 
-path {
-  cursor: pointer;
+.states {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.state-title {
+  font-size: 48px;
+}
+
+.states-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.state-box {
+  flex-basis: 30%;
+  flex-grow: 1;
+  min-width: 350px;
+  height: fit-content;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.state-content {
+  padding: 20px;
+}
+
+.state-content > h1 {
+  margin: 0px;
+}
+
+.elec-votes {
+  margin: 3px 0px 0px 0px;
+  color: rgb(102, 102, 102);
+}
+
+.state-result-title {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.candidates {
+  grid-column: 1 / 7;
+}
+
+.votes {
+  grid-column: 7 / 12;
+}
+
+.percentage {
+  grid-column: 12 / 12;
+}
+
+.colored-winner-bar {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.resultColoredBox {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.padding10 {
+  padding: 10px;
+}
+
+.full-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.candidate-icon {
+  justify-content: center;
+  margin: 0px 10px 0px 10px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .blue {
@@ -150,14 +190,20 @@ path {
   font-size: 48px;
 }
 
+.blueBackground {
+  background-color: rgb(62, 62, 145);
+  color: white;
+}
+
 .red {
   fill: rgb(192, 26, 26);
   color: rgb(192, 26, 26);
   font-size: 48px;
 }
 
-.white {
-  fill: rgb(209, 209, 209);
+.redBackground {
+  background-color: rgb(212, 29, 29);
+  color: white;
 }
 
 .grayText {
