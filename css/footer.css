@@ -1,0 +1,9 @@
+footer {
+  height: 100px;
+  background-color: black;
+}
+
+.fa-copyright {
+  margin: 20px 0px 0px 10px;
+  color: white;
+}

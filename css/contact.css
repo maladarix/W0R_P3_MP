@@ -1,0 +1,54 @@
+.formContact {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  max-width: 30%;
+  min-width: 250px;
+  flex-wrap: wrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  padding: 8px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+#submit {
+  margin-top: 15px;
+}
+
+.radio, label {
+  margin: 0px 0px 0px 2px
+}
+
+.note {
+  display: flex;
+}
+
+.note:not(:first-child) {
+  margin-left: auto;
+}
+
+@media (max-width: 800px) {
+  .formContact {
+    width: 100%;
+    max-width: 100%;
+  }
+}

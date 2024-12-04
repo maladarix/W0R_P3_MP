@@ -1,0 +1,53 @@
+.statsBoard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.title > p {
+  font-weight: 600;
+  font-size: large;
+}
+
+.parameter {
+  width: 50%;
+  text-align: left;
+}
+
+.col {
+  width: 12.5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.value {
+  display: flex;
+  padding: 10px 0px 10px 0px;
+  border-bottom: rgb(182, 182, 182) solid 1px;
+}
+
+.value > p {
+  margin: 0px;
+  text-wrap: wrap;
+}
+
+.statsBoard > div {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .title > p {
+    font-weight: 600;
+    font-size: 12px;
+  }
+
+  .parameter {
+    width: 45%;
+  }
+
+  .col {
+    width: 13.75%;
+  }
+}

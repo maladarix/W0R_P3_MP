@@ -1,11 +1,14 @@
 body {
   margin: 0px;
+  min-width: 300px;
+  background-image: linear-gradient(0deg, rgb(233, 233, 233), rgb(255,255,255) );
 }
 
 main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 10px;
+  gap: 8px;
+  min-height: 90vh;
 }
 
 .content {
@@ -36,19 +39,19 @@ main {
 }
 
 .text-top-board {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .resume {
   display: flex;
-  grid-column: 1 / 6;
+  grid-column: 1 / 7;
 }
 
 .right {
   justify-content: end;
-  grid-column: 8 / 13;
+  grid-column: 7 / 13;
 }
 
 .align-right {
@@ -78,19 +81,6 @@ main {
   left: 50%;
   border-right: 2px dotted black;
   height: 100%;
-}
-
-.blue-bar {
-  width: 42.01%;
-  height: 20px;
-  background-color: rgb(62, 62, 145);
-  margin-right: 3.16%;
-}
-
-.red-bar {
-  width: 54.83%;
-  height: 20px;
-  background-color: rgb(192, 26, 26);
 }
 
 .result {
@@ -206,6 +196,16 @@ main {
   color: white;
 }
 
+.white {
+  fill: white;
+  background-color: white;
+  color: white;
+}
+
+.purple {
+  fill: purple;
+}
+
 .grayText {
   color: rgb(90, 90, 90);
 }
@@ -216,4 +216,37 @@ main {
 
 .no-margin {
   margin: 0px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin-top: 0px;
+    grid-column: 2 / 12;
+  }
+
+  .head-title {
+    font-size: 48px;
+    margin: 0px 0px 10px 0px;
+  }
+
+  .head-subtitle {
+    font-size: 18px;
+  }
+
+  .states-flex {
+    justify-content: center;
+    min-width: 295px;
+  }
+
+  .state-box {
+    min-width: 200px;
+  }
+
+  .text-top-board > h2, .text-top-board > p {
+    font-size: 12px;
+  }
+
+  .text-top-board > h1 {
+    font-size: 24px;
+  }
 }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menu - Projet #2 - Matisse Pageau</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <script src="https://kit.fontawesome.com/ccea96dad4.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header>
+      <div class="btn-flex" onclick="window.location.href='/president.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-square-poll-vertical"></i>
+          <h3>Président</h3>
+        </div>
+      </div>
+      <div class="btn-flex" onclick="window.location.href='/senat.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-landmark-flag"></i>
+          <h3>Sénat</h3>
+        </div>
+      </div>
+      <div class="btn-flex" onclick="window.location.href='/president.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-landmark-flag"></i>
+          <h3>Maison des représentants</h3>
+        </div>
+      </div>
+      <div class="btn-flex" onclick="window.location.href='/gouverneurs.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-landmark-dome"></i>
+          <h3>Gouverneurs</h3>
+        </div>
+      </div>
+      <div class="btn-flex" onclick="window.location.href='/stats.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-user"></i>
+          <h3>Statistique de l'électorat</h3>
+        </div>
+      </div>
+      <div class="btn-flex" onclick="window.location.href='/electionSystem.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-landmark-dome"></i>
+          <h3>Election System</h3>
+        </div>
+      </div>
+      <div class="btn-flex selected" onclick="window.location.href='/contact.html'">
+        <div class="btn-label">
+          <i class="fa-solid fa-landmark-dome"></i>
+          <h3>Contact</h3>
+        </div>
+      </div>
+    </header>
+    
+    <main>
+      <div class="content">
+        <div class="flex-header ">
+          <h1>Nous Contacter</h1>
+          <p>Remplir le formulaire pour nous contacter</p>
+        </div>
+        <form class=" formContact" method="get" action="/pages/index/index.html">
+          <input type="text" id="firstName" name="firstName" placeholder="Prénom">
+          <input type="text" id="lastName" name="lastName" placeholder="Nom de famille">
+          <input type="email" id="email" name="email" placeholder="E-Mail">
+          <input type="text" id="subject" name="subject" placeholder="Sujet">
+          <select id="selectMenu" name="selectMenu">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+
+          <textarea id="textBox" name="textBox" rows="4" placeholder="Message"></textarea>
+
+          <input type="number" id="age" name="age" min="1" placeholder="Age">
+
+          <p>Donnez-nous une note</p>
+          <div class="stars">
+            <div class="note">
+              <label for="1">1</label>
+              <input class="radio" id="1" type="radio" name="rating" value="1">
+            </div>
+            <div class="note">
+              <label for="2">2</label>
+              <input class="radio" id="2" type="radio" name="rating" value="2">
+            </div>
+            <div class="note">
+              <label for="3">3</label>
+              <input class="radio" id="3" type="radio" name="rating" value="1">
+            </div>
+            <div class="note">
+              <label for="4">4</label>
+              <input class="radio" id="4" type="radio" name="rating" value="1">
+            </div>
+            <div class="note">
+              <label for="5">5</label>
+              <input class="radio" id="5" type="radio" name="rating" value="1">
+            </div>
+          </div>
+          <button id="submit" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <div>
+          <i class="fa-solid fa-copyright"> - Matisse Pageau</i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

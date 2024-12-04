@@ -1,13 +1,14 @@
 .img-container {
   width: 100px;
-  height: 100px;
+  min-width: 40px;
+  height: auto;
   overflow: hidden;
   border-radius: 100%;
 }
 
 .photo {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .blueBorder {
@@ -17,3 +18,45 @@
 .redBorder {
   border: solid 2px red;
 }
+
+.blue-bar {
+  width: 42.01%;
+  height: 20px;
+  background-color: rgb(62, 62, 145);
+  margin-right: 3.16%;
+}
+
+.red-bar {
+  width: 54.83%;
+  height: 20px;
+  background-color: rgb(192, 26, 26);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipText {
+  visibility: hidden;
+  width: 150px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 105%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1; /* Tooltip fades in on hover */
+}
+
+

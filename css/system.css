@@ -1,0 +1,30 @@
+.system-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  justify-content: center;
+  align-items: center;
+}
+
+.system-text > p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.system-title {
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.system-subTitle {
+  margin: 15px 0px 0px 0px;
+  width: 100%;
+}
+
+.img {
+  margin-top: 10px;
+  width: 30%;
+  height: auto;
+}

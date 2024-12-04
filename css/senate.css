@@ -1,0 +1,11 @@
+.blue-bar {
+  width: 47%;
+  height: 20px;
+  background-color: rgb(62, 62, 145);
+}
+
+.red-bar {
+  width: 53%;
+  height: 20px;
+  background-color: rgb(192, 26, 26);
+}
